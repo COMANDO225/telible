@@ -128,6 +128,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="header-left-bar">
+
                             <ul class="contact-wrapper">
                                 <li>
                                     <a href="mailto:joseherrera@greendesert.com.pe" target="_blank" class="anchore-nav"
@@ -136,11 +137,18 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div> <!-- header-left-bar -->
+                        </div>
                     </div>
 
-                    <div class="col-sm-6">
-                        <div class="header-right-bar text-right">
+
+                    <div class="col-sm-6" style="display: flex; justify-content: flex-end;">
+                        <!-- <div class="country dropdown inline-block">
+                            <select id="lenguita" name="idiomas" class="dropdown-select">
+                                <option value="es">Español</option>
+                                <option value="en">Ingles</option>
+                            </select>
+                        </div> -->
+                        <!-- <div class="header-right-bar text-right">
                             <ul class="social-icon">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -148,11 +156,11 @@
                                 <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-                        </div> <!-- header-right-bar -->
+                        </div> -->
                     </div>
-                </div> <!-- top-bar -->
+                </div>
             </div>
-        </div> <!-- top-bar -->
+        </div>
 
         <nav class="navbar navbar-inverse hidden-sm hidden-xs">
             <div class="container">
@@ -164,15 +172,15 @@
                     <ul class="nav navbar-nav">
                         <li><a class="page-scroll" href="#page-top">Inicio</a></li>
 
-                        <li><a class="page-scroll" href="#service">Servicios</a></li>
+                        <!-- <li><a class="page-scroll" href="#service">Servicios</a></li> -->
 
-                        <li><a class="page-scroll" href="#nosotros">Nosotros</a></li>
+                        <li><a class="page-scroll" href="#nosotros">Quienes Somos</a></li>
 
                         <li><a class="page-scroll" href="#misionvision">Misión y Visión</a></li>
 
-                        <li><a class="page-scroll" href="#galeria">Galeria</a></li>
+                        <li><a class="page-scroll" href="#galeria">Proyectos</a></li>
 
-                        <li><a class="page-scroll" href="#contact">Contacto</a></li>
+                        <li><a class="page-scroll" href="#contact">Contáctenos</a></li>
                     </ul>
                 </div>
             </div>
@@ -186,129 +194,180 @@
 
     <section class="slider-section">
         <h1 class="hidden">GREEN DESERT</h1>
-        <div class="main-slider">
+        <div class="relative main-slider">
             <div id="main-slider-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
+                    <div class="item relative active">
                         <div class="slider-one"></div>
 
-                        <div class="content text-center">
-                            <div class="large-text" data-animation="animated fadeInDown">Restaurando Nuestra <br>
-                                Tierra</div>
-
-                            <div class="guard">
-                                <p class="small-text" data-animation="animated fadeInDown">
-                                    Green Desert se compromete a revivir la costa <br> desértica de Sudamérica a través
-                                    de la reforestación con algarrobo nativo.
-                                </p>
+                        <div class="absolute text-center z-1 w-full h-full" style="top: 0; left: 0; display: flex; align-items: center;
+                        ">
+                            <div class="wrap_image_logo">
+                                <img src="images/logo_banner.png" width="100%" alt="image">
                             </div>
-
-                            <!-- <div class="link-button" data-animation="animated fadeInUp">
-                                <a href="#" class="btn btn-primary">Our Services</a>
-                            </div> -->
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item relative">
                         <div class="slider-two"></div>
-
-                        <div class="content text-right">
-                            <div class="large-text" data-animation="animated fadeInDown">Amazonía Sostenible</div>
-
-                            <div class="guard">
-                                <p class="small-text" data-animation="animated fadeInLeft">
-                                    Trabajamos incansablemente para preservar y<br> rehabilitar la biodiversidad de la
-                                    Amazonía peruana.
-                                </p>
-                            </div>
-
-                            <!-- <div class="link-button" data-animation="animated fadeInUp">
-                                <a href="#" class="btn btn-primary">Our Services</a>
-                            </div> -->
-                        </div>
                     </div>
 
-                    <!-- <div class="item">
+                    <div class="item relative">
                         <div class="slider-three"></div>
-
-                        <div class="content text-left">
-                            <div class="large-text" data-animation="animated fadeInDown">We provide most authentic <br>
-                                landscaping service</div>
-
-                            <div class="guard">
-                                <p class="small-text" data-animation="animated fadeInRight">If the unpredictable British
-                                    weather isn't enough to counter your <br> desire to work outside, gardening is a
-                                    great industry to get <br> involved in.</p>
-                            </div>
-
-                            <div class="link-button" data-animation="animated fadeInUp">
-                                <a href="#" class="btn btn-primary">Our Services</a>
+                        <div class="absolute text-center z-1 w-full h-full" style="top: 0; left: 0; display: flex; align-items: center;
+                        ">
+                            <div class="wrap_image_cuadro">
+                                <img src="images/LOGO_CUADRO.png" width="100%" alt="image">
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-
-                <a class="left carousel-control" href="#main-slider-carousel" role="button" data-slide="prev"><i
-                        class="fa fa-angle-left" aria-hidden="true"></i></a>
-
-                <a class="right carousel-control" href="#main-slider-carousel" role="button" data-slide="next"><i
-                        class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
+
+            <a class="left carousel-control" style="display: flex; align-items: center; justify-content: center; padding: 1rem;
+            " href="#main-slider-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"
+                    aria-hidden="true"></i></a>
+
+            <a class="right carousel-control" style="display: flex; align-items: center; justify-content: center; padding: 1rem;
+            " href="#main-slider-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"
+                    aria-hidden="true"></i></a>
         </div>
-    </section> <!-- slider-section -->
 
+    </section>
 
-
-    <section id="service" class="service-section section-padding">
-        <div class="container text-center">
-            <div class="section-title">
-                <h2>Nuestros <span class="text-color">Servicios</span></h2>
-                <p>Descubre cómo contribuimos al medio ambiente y a la comunidad.</p>
-            </div>
-
+    <section id="nosotros" class="growing-section section-padding">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-wrapper wow zoomIn">
-                        <img src="images/icon/i1.png" alt="">
-
-                        <h3>Reforestación Costera</h3>
-                        <p>Restauramos ecosistemas costeros degradados plantando algarrobos y mitigando la
-                            desertificación.</p>
-                        <a href="#" class="link">Saber más</a>
-                    </div> <!-- service-wrapper -->
+                <div class="col-sm-12 visible-sm visible-xs">
+                    <div class="caption">
+                        <img src="images/instrument.jpg" alt="">
+                    </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-wrapper wow zoomIn" data-wow-delay="0.2s">
-                        <img src="images/icon/i1.png" alt="">
+                <div class="">
+                    <div class="content-wrapper">
+                        <h3 class="text-center">Quienes <span class="text-primary">somos</span></h3>
+                        <div class="relative desert_image">
+                            <img draggable="false" src="images/quienes-somos/desierto.png" width="100%" height="auto"
+                                alt="queda">
+                            <div class="absolute z-1"
+                                style="display: flex; justify-content: center; align-items: center;">
+                                <div class="relative w-full flex-center card_desert"
+                                    style="max-width: 550px; padding: 3rem 3rem 4rem 3rem">
+                                    <p class="text-center" style="font-size: large; color: #fff; margin: auto;">Green
+                                        Desert (GD) es una
+                                        organización
+                                        sin fines
+                                        de lucro <br>
+                                        dedicada a la reforestación
+                                        de
+                                        zonas desérticas y degradadas en América del Sur, que en el pasado fueron
+                                        bosques.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative bosque_image">
+                            <img src="images/quienes-somos/bosque.png" width="100%" alt="imagen de un bosque">
+                            <div class="cuadro_bosque_antencedentes"
+                                style="width: 100%; height: 100%; top: 0; left: 0;">
+                                <div class="w-full h-full flexin" style="padding: 1.25rem;">
+                                    <div class=""
+                                        style="background-color: #232E14; color: #fff; padding: 1.75rem 1rem 1.5rem 1rem;">
+                                        <h1>Antecendentes</h1>
+                                        <p style=" color: #fff; margin: 0;">Desde el siglo XIX se presentan pronunciadas
+                                            variaciones climáticas a nivel
+                                            mundial, las cuales se ven reflejadas en cambios de temperaturas y patrones
+                                            climáticos que alteran negativamente el medio ambiente. En muchos casos,
+                                            estos
+                                            cambios son provocados por la actividad humana, la cual han sido la
+                                            principal
+                                            causa de la rotura del equilibrio ecológico.
+                                            Cuando los españoles llegaron a américa en el siglo XV ac, la costa
+                                            occidental
+                                            del continente, desde Guayaquil en Ecuador, hasta Tamarugal en Chile, era
+                                            verde
+                                            y estaba poblada, por árboles de la especie nativa PROSOPIS PALLIDA,
+                                            comúnmente
+                                            llamada ALGARROBO o TAMARUGO. Posteriormente los españoles introducen la
+                                            cabra
+                                            como agente extraño al hábitat americano y sacrifican a los guanacos que
+                                            daban
+                                            sustento al mantenimiento del bosque. Simultáneamente ejecutaron la tala
+                                            masiva
+                                            de árboles para enviar madera a España y con todo ello se generó la
+                                            desertificación de las zonas costeras de esta región.
+                                            <br>
+                                            En la zona amazónica, ocurre un fenómeno parecido que está ocasionando la
+                                            pérdida de extensas zonas boscosas, por la acción incontrolada de la mano
+                                            del hombre.
+                                            Para contrarrestar los efectos de estas críticas situaciones, se ha creado
+                                            la Asociación Green Desert (GD).
 
-                        <h3>Gestión del Agua</h3>
-                        <p>Desarrollamos proyectos para garantizar el acceso al agua en áreas de reforestación y
-                            comunidades locales.</p>
-                        <a href="#" class="link">Saber más</a>
-                    </div> <!-- service-wrapper -->
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h3 class="text-center">Antecedentes</h3> -->
+                        <!-- <p>En Green Desert, somos una organización sin fines de lucro que abraza un compromiso profundo
+                            con la restauración de los ecosistemas. Nuestra pasión radica en revitalizar
+                            las tierras que han sufrido degradación ambiental y combatir activamente la desertificación
+                            que amenaza nuestros entornos naturales. Guiados por un equipo dedicado y una visión de
+                            sostenibilidad, trabajamos incansablemente para preservar la riqueza de la biodiversidad,
+                            restaurar áreas degradadas y promover la armonía entre la humanidad y la naturaleza. Nuestra
+                            misión es más que un propósito; es un llamado a la acción para crear un futuro más verde y
+                            próspero para las generaciones venideras.</p> -->
+
+                        <!-- <button class="btn btn-primary">Read More</button>
+
+                        <button class="btn btn-default">Our History</button> -->
+                    </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-wrapper wow zoomIn" data-wow-delay="0.4s">
-                        <img src="images/icon/i1.png" alt="">
-
-                        <h3>Conservación de la Amazonía</h3>
-                        <p>Preservamos las áreas verdes de la Amazonía peruana y restauramos ecosistemas dañados.</p>
-                        <a href="#" class="link">Saber más</a>
-                    </div> <!-- service-wrapper -->
-                </div>
+                <!-- <div class="col-md-5 hidden-sm hidden-xs">
+                    <div class="caption wow slideInRight" data-wow-delay="0.2s">
+                        <img src="images/instrument.jpg" alt="">
+                    </div>
+                </div> -->
             </div>
-
-            <div class="more-service">
-                <div class="link btn btn-default">
-                    Juntos, un mejor ambiente.
-                </div>
-            </div> <!-- more-service -->
         </div>
-    </section> <!-- service-section -->
+    </section>
 
 
+    <section id="misionvision" class="growing-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 visible-sm visible-xs">
+                    <div class="caption">
+                        <img src="images/imisionvision.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <div class="caption wow slideInRight" data-wow-delay="0.2s">
+                        <img src="images/imagen_mision_vision.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <div class="content-wrapper">
+                        <h3 style="margin-bottom: 1.25rem;">Misión</h3>
+
+                        <p>Contando con la cooperación nacional e internacional, reforestar las zonas desérticas o
+                            depredadas que antes fueron bosques en Sudamérica.</p>
+                    </div>
+                    <div class="content-wrapper">
+                        <h3 style="margin-bottom: 1.25rem;">Visión</h3>
+
+                        <p>Green Desert consigue reducir la desertificación de las zonas costeras occidentales de
+                            Sudamérica y la reforestación de la amazonia.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section> <!-- growing-section -->
 
     <section class="counting-section text-center">
         <div class="container">
@@ -345,84 +404,7 @@
                 </div>
             </div> <!-- /.counting-pusher -->
         </div>
-    </section> <!-- counting-section -->
-
-
-
-    <section id="nosotros" class="growing-section section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 visible-sm visible-xs">
-                    <div class="caption">
-                        <img src="images/instrument.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="col-md-7 col-sm-12">
-                    <div class="content-wrapper">
-                        <h3>Restaurando la Naturaleza: Nuestra Pasión y Compromiso</h3>
-
-                        <p>En Green Desert, somos una organización sin fines de lucro que abraza un compromiso profundo
-                            con la restauración de los ecosistemas. Nuestra pasión radica en revitalizar
-                            las tierras que han sufrido degradación ambiental y combatir activamente la desertificación
-                            que amenaza nuestros entornos naturales. Guiados por un equipo dedicado y una visión de
-                            sostenibilidad, trabajamos incansablemente para preservar la riqueza de la biodiversidad,
-                            restaurar áreas degradadas y promover la armonía entre la humanidad y la naturaleza. Nuestra
-                            misión es más que un propósito; es un llamado a la acción para crear un futuro más verde y
-                            próspero para las generaciones venideras.</p>
-
-                        <!-- <button class="btn btn-primary">Read More</button>
-
-                        <button class="btn btn-default">Our History</button> -->
-                    </div> <!-- content-wrapper -->
-                </div>
-
-                <div class="col-md-5 hidden-sm hidden-xs">
-                    <div class="caption wow slideInRight" data-wow-delay="0.2s">
-                        <img src="images/instrument.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-
-
-    <section id="misionvision" class="growing-section section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 visible-sm visible-xs">
-                    <div class="caption">
-                        <img src="images/imisionvision.png" alt="">
-                    </div>
-                </div>
-
-                <div class="col-md-5 hidden-sm hidden-xs">
-                    <div class="caption wow slideInRight" data-wow-delay="0.2s">
-                        <img src="images/imisionvision.png" alt="">
-                    </div>
-                </div>
-
-                <div class="col-md-7 col-sm-12">
-                    <div class="content-wrapper">
-                        <h3 style="margin-bottom: 1.25rem;">Misión</h3>
-
-                        <p>Rehabilitar y recuperar áreas degradadas que alguna vez fueron bosques en Sudamérica,
-                            trabajando en la reforestación de zonas desérticas y la conservación de la Amazonía.</p>
-                    </div>
-                    <div class="content-wrapper">
-                        <h3 style="margin-bottom: 1.25rem;">Visión</h3>
-
-                        <p>Convertirnos en líderes en la lucha contra la desertificación y la preservación de la
-                            biodiversidad en Sudamérica, logrando un equilibrio ecológico sostenible.</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section> <!-- growing-section -->
-
-
 
     <section id="galeria" class="project-section section-padding">
         <div class="container text-center">
@@ -446,7 +428,7 @@
                                     <img src="images/project/Imagen1.jpg" alt="">
 
                                     <div class="hover-view">
-                                        <a href="images/project/5.jpg"><i class="fa fa-picture-o"></i></a>
+                                        <a href="images/project/Imagen1.jpg"><i class="fa fa-picture-o"></i></a>
 
                                         <span class="border-one"></span>
                                         <span class="border-two"></span>
@@ -600,11 +582,11 @@
 
 
 
-    <section id="team" class="team-section section-padding">
+    <!-- <section id="team" class="team-section section-padding">
         <div class="container">
             <div class="section-title text-center">
                 <h2>Nuestro <span class="text-color">Directivo</span></h2>
-            </div> <!-- section-title -->
+            </div> 
 
             <div class="row" style="display: flex; justify-content: center;">
                 <div class="col-sm-6">
@@ -614,13 +596,8 @@
                                 <img src="images/team/t2.jpg" alt="">
                             </span>
 
-                            <ul class="social-icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            </ul> <!-- social-icon -->
-                        </div> <!-- left-bar -->
+                           
+                        </div>
 
                         <div class="right-bar">
                             <h5 style="margin-bottom: 0.5rem;">
@@ -632,11 +609,85 @@
                             <p> Presidente del Directorio y Gerente General de Green Desert, dirige nuestras iniciativas
                                 para combatir la desertificación y revitalizar los ecosistemas en Sudamérica...</p>
                         </div>
-                    </div><!--  team-wrapper -->
+                    </div>
                 </div>
             </div>
         </div>
-    </section> <!-- team-section -->
+    </section> -->
+    <section id="service" class="service-section section-padding">
+        <div class="container text-center">
+            <div class="section-title">
+                <h2>Nuestros <span class="text-color">Directivos</span></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper wow zoomIn">
+                        <img src="images/icon/i1.png" alt="">
+
+                        <h3>Ing° José María Herrera Rosas.</h3>
+                        <p style="margin-bottom: 1rem;
+                        ">Presidente del Directorio y Gerente General de Green Desert.</p>
+                        <ul>
+                            <li>
+                                <a href="mailto:joseherrera@greendesert.pe" target="_blank"
+                                    rel="noopener noreferrer">joseherrera@greendesert.pe</a>
+                            </li>
+                            <li>
+                                <a href="mailto:joseherrera99@yahoo.com" target="_blank"
+                                    rel="noopener noreferrer">joseherrera99@yahoo.com</a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- service-wrapper -->
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper wow zoomIn" data-wow-delay="0.2s">
+                        <img src="images/icon/i1.png" alt="">
+
+                        <h3>Ing° Cesar Rafael Herrera Aguilar </h3>
+                        <p style="margin-bottom: 1rem;">Subgerente de Green Desert</p>
+                        <ul>
+                            <li>
+                                <a href="mailto:cesarherrera@greendesert.pe" target="_blank"
+                                    rel="noopener noreferrer">cesarherrera@greendesert.pe</a>
+                            </li>
+                            <li>
+                                <a href="mailto:cesarherrera241@hotmail.com" target="_blank"
+                                    rel="noopener noreferrer">cesarherrera241@hotmail.com</a>
+                            </li>
+                        </ul>
+                    </div> <!-- service-wrapper -->
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper wow zoomIn" data-wow-delay="0.4s">
+                        <img src="images/icon/i1.png" alt="">
+
+                        <h3>Víctor Raúl Portilla Arteta</h3>
+                        <p style="margin-bottom: 1rem;">Secretario del Directorio de Green Desert</p>
+                        <ul>
+                            <li>
+                                <a href="mailto:victorportilla@greendesert.pe" target="_blank"
+                                    rel="noopener noreferrer">victorportilla@greendesert.pe</a>
+                            </li>
+                            <li>
+                                <a href="mailto:raulportilla1944@gmail.com" target="_blank"
+                                    rel="noopener noreferrer">raulportilla1944@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div> <!-- service-wrapper -->
+                </div>
+            </div>
+
+            <div class="more-service">
+                <div class="link btn btn-default">
+                    Juntos, un mejor ambiente.
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -987,7 +1038,7 @@
                     <div class="col-md-4">
                         <div class="footer-wrapper first-wrapper">
                             <h3>
-                                Mantente al día
+                                ASOCIACIÓN GREEN DESERT
                             </h3>
 
                             <form class="footerForm">
@@ -999,13 +1050,13 @@
                                 </button>
                             </form>
 
-                            <ul class="social-icon">
+                            <!-- <ul class="social-icon">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                            </ul> <!-- social-icon -->
+                            </ul> -->
                         </div> <!-- footer-wrapper -->
                     </div>
 
@@ -1122,7 +1173,7 @@
         <i class="fa fa-chevron-up"></i>
     </div>
 
-
+    <script src="js/custom.js"></script>
     <script src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.inview.min.js"></script>
