@@ -1,5 +1,7 @@
 const languageButton = document.getElementById('language-button');
+const languageButtonMobile = document.getElementById('language-button-mobile');
 const flagImage = document.getElementById('flag');
+const flagImageMobile = document.getElementById('flag-mobile');
 let currentLanguage = localStorage.getItem('selectedLanguage') || 'es';
 
 if (!currentLanguage) {
@@ -18,6 +20,23 @@ languageButton.addEventListener('click', () => {
         currentLanguage = 'es';
         flagImage.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg';
         flagImage.style.height = '21px';
+        alert('Español seleccionado.');
+    }
+    localStorage.setItem('selectedLanguage', currentLanguage);
+    changeLanguage(currentLanguage);
+});
+
+// Función para cambiar el idioma y la bandera al hacer clic en el botoncito masna!!!.
+languageButtonMobile.addEventListener('click', () => {
+    if (currentLanguage === 'es') {
+        currentLanguage = 'en';
+        flagImageMobile.src = 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg';
+        flagImageMobile.style.height = 'auto';
+        alert('Inglés seleccionado.');
+    } else {
+        currentLanguage = 'es';
+        flagImageMobile.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg';
+        flagImageMobile.style.height = '21px';
         alert('Español seleccionado.');
     }
     localStorage.setItem('selectedLanguage', currentLanguage);
@@ -313,6 +332,12 @@ function changeLanguage(language) {
         document.getElementById('missionVision-link').textContent = navTranslation.missionVision;
         document.getElementById('projects-link').textContent = navTranslation.projects;
         document.getElementById('contact-link').textContent = navTranslation.contact;
+        // home-link-mobile
+        document.getElementById('home-link-mobile').textContent = navTranslation.home;
+        document.getElementById('about-link-mobile').textContent = navTranslation.about;
+        document.getElementById('missionVision-link-mobile').textContent = navTranslation.missionVision;
+        document.getElementById('projects-link-mobile').textContent = navTranslation.projects;
+        document.getElementById('contact-link-mobile').textContent = navTranslation.contact;
     }
 
     // tradu. de quienes somos

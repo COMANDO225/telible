@@ -89,7 +89,8 @@
 	background-color: #6cbe03;
 }
 
-#offcanvas-menu .menu-wrapper li a {
+#offcanvas-menu .menu-wrapper li a,
+#offcanvas-menu .menu-wrapper li div {
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	font-weight: 500;

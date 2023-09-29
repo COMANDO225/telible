@@ -891,13 +891,33 @@
     <span class="menu-toggle navbar visible-xs visible-sm "><i class="fa fa-bars" aria-hidden="true"></i></span>
     <div id="offcanvas-menu" class="visible-xs visible-sm">
         <span class="close-menu"><i class="fa fa-times" aria-hidden="true"></i></span>
-        <ul class="menu-wrapper">
-            <li><a class="page-scroll" href="#page-top">Inicio</a></li>
-            <li><a class="page-scroll" href="#nosotros">Quienes Somos</a></li>
-            <li><a class="page-scroll" href="#misionvision">Misión y Visión</a></li>
-            <li><a class="page-scroll" href="#proyectos">Proyectos</a></li>
-            <li><a class="page-scroll" href="#contact">Contáctenos</a></li>
+
+        <ul class="menu-wrapper" style="height: auto;">
+            <li><a id="home-link-mobile" class="page-scroll" href="#page-top">Inicio</a></li>
+
+            <li><a id="about-link-mobile" class="page-scroll" href="#nosotros">Quienes Somos</a></li>
+
+            <li><a id="missionVision-link-mobile" class="page-scroll" href="#misionvision">Misión y Visión</a></li>
+
+            <li><a id="projects-link-mobile" class="page-scroll" href="#proyectos">Proyectos</a></li>
+
+            <li><a id="contact-link-mobile" class="page-scroll" href="#contact">Contáctenos</a></li>
+            <li>
+                <div class="" style="display:flex; gap: 1rem; align-items: center;
+                ">
+                    <span style="color: #fff;">Lenguaje: </span>
+                    <button id="language-button-mobile" class="language-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg" id="flag-mobile"
+                            width="32px" height="auto" alt="">
+                    </button>
+                </div>
+            </li>
         </ul>
+        <div class="relative">
+            <ul style="height: auto; padding: 0;">
+
+            </ul>
+        </div>
     </div>
     <div id="toTop" class="hidden-xs">
         <i class="fa fa-chevron-up"></i>
