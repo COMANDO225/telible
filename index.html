@@ -139,7 +139,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="display: flex; justify-content: flex-end;">
+                    <div class="col-sm-6" style="display: flex; height: 80px; justify-content: flex-end; align-items: center;
+                    ">
+                        <div class="wrap_btn relative">
+                            <button id="language-button" class="language-button">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
+                                    id="flag" width="32px" height="auto" alt="">
+                            </button>
+                            <div id="language-menu" class="language-menu">
+                                <button id="spanish-button">Español</button>
+                                <button id="english-button">Inglés</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,15 +164,15 @@
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a class="page-scroll" href="#page-top">Inicio</a></li>
+                        <li><a id="home-link" class="page-scroll" href="#page-top">Inicio</a></li>
 
-                        <li><a class="page-scroll" href="#nosotros">Quienes Somos</a></li>
+                        <li><a id="about-link" class="page-scroll" href="#nosotros">Quienes Somos</a></li>
 
-                        <li><a class="page-scroll" href="#misionvision">Misión y Visión</a></li>
+                        <li><a id="missionVision-link" class="page-scroll" href="#misionvision">Misión y Visión</a></li>
 
-                        <li><a class="page-scroll" href="#proyectos">Proyectos</a></li>
+                        <li><a id="projects-link" class="page-scroll" href="#proyectos">Proyectos</a></li>
 
-                        <li><a class="page-scroll" href="#contact">Contáctenos</a></li>
+                        <li><a id="contact-link" class="page-scroll" href="#contact">Contáctenos</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,7 +238,8 @@
 
                 <div class="">
                     <div class="content-wrapper">
-                        <h3 class="text-center">Quienes <span class="text-primary">somos</span></h3>
+                        <h3 id="nosotros-quienes" class="text-center">Quienes <span class="text-primary">somos</span>
+                        </h3>
                         <div class="relative desert_image">
                             <img draggable="false" src="images/quienes-somos/desierto.png" width="100%" height="auto"
                                 alt="queda">
@@ -235,7 +247,8 @@
                                 style="display: flex; justify-content: center; align-items: center;">
                                 <div class="relative w-full flex-center card_desert"
                                     style="max-width: 550px; padding: 3rem 3rem 4rem 3rem">
-                                    <p class="text-center" style="font-size: large; color: #fff; margin: auto;">Green
+                                    <p id="nosotros-desc" class="text-center"
+                                        style="font-size: large; color: #fff; margin: auto;">Green
                                         Desert (GD) es una
                                         organización
                                         sin fines
@@ -254,8 +267,10 @@
                                 <div class="w-full h-full flexin" style="padding: 1.25rem;">
                                     <div class=""
                                         style="background-color: #232E14; color: #fff; padding: 1.75rem 1rem 1.5rem 1rem;">
-                                        <h1>Antecendentes</h1>
-                                        <p style=" color: #fff; margin: 0;">Desde el siglo XIX se presentan pronunciadas
+                                        <h1 id="nosotros-antecedentes-titulo">Antecendentes</h1>
+                                        <p id="nosotros-antecedentes-desc" style=" color: #fff; margin: 0;">Desde el
+                                            siglo XIX
+                                            se presentan pronunciadas
                                             variaciones climáticas a nivel
                                             mundial, las cuales se ven reflejadas en cambios de temperaturas y patrones
                                             climáticos que alteran negativamente el medio ambiente. En muchos casos,
@@ -283,7 +298,6 @@
                                             del hombre.
                                             Para contrarrestar los efectos de estas críticas situaciones, se ha creado
                                             la Asociación Green Desert (GD).
-
                                         </p>
                                     </div>
                                 </div>
@@ -314,15 +328,17 @@
 
                 <div class="col-md-7 col-sm-12">
                     <div class="content-wrapper">
-                        <h3 style="margin-bottom: 1.25rem;">Misión</h3>
+                        <h3 id="mision-titulo" style="margin-bottom: 1.25rem;">Misión</h3>
 
-                        <p>Contando con la cooperación nacional e internacional, reforestar las zonas desérticas o
+                        <p id="mision-desc">Contando con la cooperación nacional e internacional, reforestar las zonas
+                            desérticas o
                             depredadas que antes fueron bosques en Sudamérica.</p>
                     </div>
                     <div class="content-wrapper">
-                        <h3 style="margin-bottom: 1.25rem;">Visión</h3>
+                        <h3 id="vision-titulo" style="margin-bottom: 1.25rem;">Visión</h3>
 
-                        <p>Green Desert consigue reducir la desertificación de las zonas costeras occidentales de
+                        <p id="vision-desc">Green Desert consigue reducir la desertificación de las zonas costeras
+                            occidentales de
                             Sudamérica y la reforestación de la amazonia.</p>
                     </div>
                 </div>
@@ -332,7 +348,7 @@
         </div>
     </section>
 
-    <section class="counting-section text-center">
+    <!-- <section class="counting-section text-center">
         <div class="container">
             <h2 class="hidden">Contador de area verde</h2>
 
@@ -367,14 +383,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="proyectos" class="growing-section section-padding">
         <div class="content-wrapper">
-            <h3 class="text-center">Proyectos <span class="text-primary">específicos</span></h3>
+            <h3 id="proyectos_titulo" class="text-center">Proyectos <span class="text-primary">específicos</span></h3>
             <div class="container" style="padding-top: 3rem;
                 ">
-                <div style="margin-bottom: 3.5rem;
+                <div id="escenario_costa" style="margin-bottom: 3.5rem;
                 ">
                     <h4 style="font-weight: 500;">Escenario de la costa sudamericana</h4>
                     <ul>
@@ -395,7 +411,7 @@
                     </ul>
                 </div>
 
-                <div class="">
+                <div id="escenario_amazonia">
                     <h4 style="font-weight: 500;">Escenario de la amazonía</h4>
                     <ul>
                         <li>
@@ -413,12 +429,13 @@
         </div>
 
         <div style="padding-top: 5rem;" class="content-wrapper">
-            <h3 class="text-center">Proyecto <span class="text-primary">Piloto en la costa</span></h3>
+            <h3 id="piloto_titulo" class="text-center">Proyecto <span class="text-primary">Piloto en la costa</span>
+            </h3>
             <div class="container" style="padding-top: 3rem;">
 
                 <div class="dual_grid">
 
-                    <div class="texto_piloto_costa">
+                    <div id="piloto_subtitulo" class="texto_piloto_costa">
                         <h4 style="font-weight: 500;">Descripción resumida:</h4>
                         <p class="texto_piloto_costa">Para el cumplimiento de su misión, GD ha elaborado un proyecto
                             piloto
@@ -436,10 +453,11 @@
         </div>
 
         <div style="padding-top: 2rem;" class="content-wrapper">
-            <h3 class="text-center">Algarrobo <span class="text-primary">El Rey del desierto</span></h3>
+            <h3 id="algarrobo_tiulo" class="text-center">Algarrobo <span class="text-primary">El Rey del desierto</span>
+            </h3>
             <div class="container" style="padding-top: 3rem;">
                 <div class="">
-                    <div class="">
+                    <div id="algarrobo_desc_parraf_one">
                         <p style="margin: 0;">El algarrobo es una planta que brinda diversos
                             beneficios al hombre debido
                             a sus
@@ -457,7 +475,7 @@
                         <img src="images/algarrobo1.jpg" alt="imagen de hombre con polo amarillo y algarrobos">
                         <img src="images/algarrobo2.jpg" alt="imagen de hombre con polo amarillo y algarrobos dos">
                     </div>
-                    <div style="padding-top: 3rem; padding-bottom: 1rem;">
+                    <div id="algarrobo_desc_parraf_dos" style="padding-top: 3rem; padding-bottom: 1rem;">
                         <p style="margin: 0;">Para la ejecución del proyecto piloto Green Desert ha logrado el apoyo
                             inicial del Instituto
                             Peruano de Catastro (IPDC), el cual ha financiado el perfil, el anteproyecto y el proyecto
@@ -466,7 +484,7 @@
                             algarrobo (Prosopis Pallida), en el caserío Nuevo Cucungará – distrito Catacaos, Provincia
                             de Piura – Departamento de Piura”.</p>
                     </div>
-                    <div style="padding-top: 3rem; ">
+                    <div id="algarrobo_desc_parraf_tres" style="padding-top: 3rem; ">
                         <p style="margin: 0;">El proyecto visa reforestar un área de
                             200 hectáreas, donde se pretende
                             implementar un pozo tubular para la
@@ -491,15 +509,15 @@
     <section id="" class="project-section section-padding">
         <div class="container text-center">
             <div class="section-title text-center">
-                <h2>Nuestra <span class="text-color">Galeria</span></h2>
+                <h2 id="galeria_titulo">Nuestra <span class="text-color">Galeria</span></h2>
             </div>
 
             <div class="portfolio gallery-grid">
                 <div class="row">
                     <ul class="portfolio-sorting gallery-button list-inline text-center">
-                        <li><a href="#" data-group="all" class="filter-btn active">Ver Todo</a></li>
-                        <li><a class="filter-btn" href="#" data-group="docs">Trabajo</a></li>
-                        <li><a class="filter-btn" href="#" data-group="amarillo">Planeación</a></li>
+                        <li><a href="#" data-group="all" id="vertodo" class="filter-btn active">Ver Todo</a></li>
+                        <li><a class="filter-btn" href="#" id="trabajo" data-group="docs">Trabajo</a></li>
+                        <li><a class="filter-btn" href="#" id="planeacion" data-group="amarillo">Planeación</a></li>
                     </ul>
 
                     <div id="lightBox" class="gallery-wrapper">
@@ -677,7 +695,7 @@
     <section id="service" class="service-section section-padding">
         <div class="container text-center">
             <div class="section-title">
-                <h2>Nuestros <span class="text-color">Directivos</span></h2>
+                <h2 id="directivos_titulo">Nuestros <span class="text-color">Directivos</span></h2>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -752,7 +770,7 @@
             <div class="row">
                 <div class="col-md-7 col-md-offset-5">
                     <div class="section-title">
-                        <h2>Envianos un <span class="text-color">Mensaje</span></h2>
+                        <h2 id="form_contacto_titulo">Envianos un <span class="text-color">Mensaje</span></h2>
                     </div>
                     <form class="quote-form text-left">
                         <div class="row">
@@ -776,7 +794,7 @@
                             </div>
                         </div>
                         <div class="form-group text-center">
-                            <button class="subscribeBtn" type="submit">Enviar Mensaje</button>
+                            <button id="send_message_form" class="subscribeBtn" type="submit">Enviar Mensaje</button>
                         </div>
                     </form>
                 </div>
