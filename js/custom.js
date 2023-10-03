@@ -256,7 +256,7 @@ const proyectos = {
                     degraded.</p>
             </li>
         </ul>`,
-        piloto_titulo: `BRIEF DESCRIPTION OF THE PROJECT<span class="text-primary">PILOT ON THE COAST</span>`,
+        piloto_titulo: `BRIEF DESCRIPTION OF THE PROJECT <span class="text-primary">PILOT ON THE COAST</span>`,
         piloto_subtitulo: `<h4 style="font-weight: 500;">Brief description:</h4>
         <p class="texto_piloto_costa">For the fulfillment of its mission, GD has developed a project
             pilot
