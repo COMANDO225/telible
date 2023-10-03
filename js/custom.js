@@ -70,7 +70,7 @@ const navigation = {
 const nosotros = {
     es: {
         quienes: "Quiénes <span class='text-primary'>somos</span>",
-        descripcion: "Desert (GD) es una organización sin fines de lucro <br> dedicada a la reforestación de zonas desérticas y degradadas en América del Sur, que en el pasado fueron bosques.",
+        descripcion: "GREEN DESERT (GD), ES UNA ASOCIACIÓN SIN FINES DE LUCRO QUE TRABAJA PARA REFORESTAR<br /> LAS ZONAS DESÉRTICAS O DEPREDADAS SUDAMERICANAS QUE ANTES FUERON BOSQUES.",
         atecedentes_titulo: "Antecedentes",
         atecedentes_desc: `Desde el siglo XIX se presentan pronunciadas
         variaciones climáticas a nivel
@@ -94,12 +94,12 @@ const nosotros = {
         masiva
         de árboles para enviar madera a España y con todo ello se generó la
         desertificación de las zonas costeras de esta región.
-        <br>
-        En la zona amazónica, ocurre un fenómeno parecido que está ocasionando la
+        `,
+        atecedentes_desc_two: `En la zona amazónica, ocurre un fenómeno parecido que está ocasionando la
         pérdida de extensas zonas boscosas, por la acción incontrolada de la mano
         del hombre.
         Para contrarrestar los efectos de estas críticas situaciones, se ha creado
-        la Asociación Green Desert (GD).`,
+        la Asociación Green Desert (GD).`
 
     },
     en: {
@@ -127,11 +127,9 @@ const nosotros = {
         massive
         of trees to send wood to Spain and with all this the
         desertification of the coastal areas of this region.
-        <br>
-        In the Amazon area, a similar phenomenon occurs that is causing the
-        loss of extensive forest areas, due to the uncontrolled action of the human hand.
-        To counteract the effects of these critical situations, the Green Desert Association (GD) has been created.`,
-
+        `,
+        atecedentes_desc_two: `In the Amazon area, a similar phenomenon occurs that is causing the loss of extensive forest areas, due to the uncontrolled action of the human hand.
+        To counteract the effects of these critical situations, the Green Desert Association (GD) has been created.`
     }
 }
 
@@ -152,7 +150,8 @@ const missionVision = {
 
 const proyectos = {
     es: {
-        proyectos_titulo: 'Proyectos <span class="text-primary">específicos</span>',
+        proyectos_titulo: `PROYECTOS <span
+        class="text-primary">ESPECÍFICOS</span>`,
         escenario_costa: `<h4 style="font-weight: 500;">Escenario de la costa sudamericana</h4>
         <ul>
             <li>
@@ -182,7 +181,8 @@ const proyectos = {
                     degradas.</p>
             </li>
         </ul>`,
-        piloto_titulo: `<h3 class="text-center">Proyecto <span class="text-primary">Piloto en la costa</span></h3>`,
+        piloto_titulo: `DESCRIPCIÓN RESUMIDA DEL PROYECTO <span
+        class="text-primary">PILOTO EN LA COSTA</span>`,
         piloto_subtitulo: `<h4 style="font-weight: 500;">Descripción resumida:</h4>
         <p class="texto_piloto_costa">Para el cumplimiento de su misión, GD ha elaborado un proyecto
             piloto
@@ -190,7 +190,7 @@ const proyectos = {
             reforestar
             una zona costera del Perú con la especie denominada “Prosopis Pallida”, comúnmente
             llamada algarrobo o tamarugo.</p>`,
-        algarrobo_tiulo: `Algarrobo <span class="text-primary">El Rey del desierto</span>`,
+        algarrobo_tiulo: `Algarrobo: <span class="text-primary">El Rey del desierto</span>`,
         algarrobo_desc_parraf_one: `<p style="margin: 0;">El algarrobo es una planta que brinda diversos
         beneficios al hombre debido
         a sus
@@ -203,7 +203,7 @@ const proyectos = {
         subterránea, no necesita de lluvias para existir. Por ello, es un árbol muy importante para
         minimizar el progreso del desierto en las zonas más áridas, toda vez que, además, sobrevive
         utilizando mínimas cantidades de agua.</p>`,
-        algarrobo_desc_parraf_dos: ` <p style="margin: 0;">Para la ejecución del proyecto piloto Green Desert ha logrado el apoyo
+        algarrobo_desc_parraf_dos: `<p style="margin: 0;">Para la ejecución del proyecto piloto Green Desert ha logrado el apoyo
         inicial del Instituto
         Peruano de Catastro (IPDC), el cual ha financiado el perfil, el anteproyecto y el proyecto
         final de reforestación de una zona desértica en norte del Perú denominado: “Proyecto
@@ -226,7 +226,7 @@ const proyectos = {
         un biodigestor para el personal de servicio.</p>`
     },
     en: {
-        proyectos_titulo: 'Specific <span class="text-primary">projects</span>',
+        proyectos_titulo: `SPECIFIC <span class="text-primary">PROJECTS</span>`,
         escenario_costa: `<h4 style="font-weight: 500;">South American coast scenario</h4>
         <ul>
             <li>
@@ -256,7 +256,7 @@ const proyectos = {
                     degraded.</p>
             </li>
         </ul>`,
-        piloto_titulo: `<h3 class="text-center">Pilot <span class="text-primary">project on the coast</span></h3>`,
+        piloto_titulo: `BRIEF DESCRIPTION OF THE PROJECT<span class="text-primary">PILOT ON THE COAST</span>`,
         piloto_subtitulo: `<h4 style="font-weight: 500;">Brief description:</h4>
         <p class="texto_piloto_costa">For the fulfillment of its mission, GD has developed a project
             pilot
@@ -264,7 +264,7 @@ const proyectos = {
             reforest
             a coastal area of Peru with the species called "Prosopis Pallida", commonly
             called carob or tamarugo.</p>`,
-        algarrobo_tiulo: `Carob Tree <span class="text-primary">The King of the desert</span>`,
+        algarrobo_tiulo: `Carob Tree: <span class="text-primary">The King of the desert</span>`,
         algarrobo_desc_parraf_one: `<p style="margin: 0;">For the execution of the pilot project Green Desert has obtained the initial support of the
         Peruvian Institute of Cadastre (IPDC), which has financed the profile, the preliminary project
         and the final project of reforestation of a desert area in northern Peru.</p>
@@ -347,6 +347,7 @@ function changeLanguage(language) {
         document.getElementById('nosotros-desc').innerHTML = nosotrosTranslation.descripcion;
         document.getElementById('nosotros-antecedentes-titulo').innerHTML = nosotrosTranslation.atecedentes_titulo;
         document.getElementById('nosotros-antecedentes-desc').innerHTML = nosotrosTranslation.atecedentes_desc;
+        document.getElementById('atecedentes_desc_two').innerHTML = nosotrosTranslation.atecedentes_desc_two;
     }
 
     // tradu. de mision y vision
