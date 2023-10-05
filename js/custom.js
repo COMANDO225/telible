@@ -15,12 +15,10 @@ languageButton.addEventListener('click', () => {
         currentLanguage = 'en';
         flagImage.src = 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg';
         flagImage.style.height = 'auto';
-        alert('Inglés seleccionado.');
     } else {
         currentLanguage = 'es';
         flagImage.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg';
         flagImage.style.height = '21px';
-        alert('Español seleccionado.');
     }
     localStorage.setItem('selectedLanguage', currentLanguage);
     changeLanguage(currentLanguage);
@@ -32,12 +30,10 @@ languageButtonMobile.addEventListener('click', () => {
         currentLanguage = 'en';
         flagImageMobile.src = 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg';
         flagImageMobile.style.height = 'auto';
-        alert('Inglés seleccionado.');
     } else {
         currentLanguage = 'es';
         flagImageMobile.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg';
         flagImageMobile.style.height = '21px';
-        alert('Español seleccionado.');
     }
     localStorage.setItem('selectedLanguage', currentLanguage);
     changeLanguage(currentLanguage);
