@@ -70,7 +70,7 @@ const navigation = {
 const nosotros = {
     es: {
         quienes: "Quiénes <span class='text-primary'>somos</span>",
-        descripcion: "GREEN DESERT (GD), ES UNA ASOCIACIÓN SIN FINES DE LUCRO QUE TRABAJA PARA REFORESTAR<br /> LAS ZONAS DESÉRTICAS O DEPREDADAS SUDAMERICANAS QUE ANTES FUERON BOSQUES.",
+        descripcion: "GREEN DESERT (GD), SOMOS UNA ASOCIACIÓN SIN FINES DE LUCRO QUE TRABAJA PARA REFORESTAR<br /> LAS ZONAS DESÉRTICAS O DEPREDADAS SUDAMERICANAS QUE ANTES FUERON BOSQUES.",
         atecedentes_titulo: "Antecedentes",
         atecedentes_desc: `Desde el siglo XIX se presentan pronunciadas
         variaciones climáticas a nivel
@@ -155,16 +155,16 @@ const proyectos = {
         escenario_costa: `<h4 style="font-weight: 500;">Escenario de la costa sudamericana</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">Proyecto pilot de reforestación de una costera desértica del
+                <p style="margin: 0 0 4px 0;">- Proyecto piloto de reforestación de una costera desértica del
                     norte del
                     Perú</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">Replicación del proyecto piloto en otras zonas desérticas del
+                <p style="margin: 0 0 4px 0;">- Replicación del proyecto piloto en otras zonas desérticas del
                     Perú</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">Rehabilitación de otras áreas costeras sudamericanas
+                <p style="margin: 0 0 4px 0;">- Rehabilitación de otras áreas costeras sudamericanas
                     desertificadas.
                 </p>
             </li>
@@ -172,11 +172,11 @@ const proyectos = {
         escenario_amazonia: `<h4 style="font-weight: 500;">Escenario de la amazonía</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">Evaluación histórica de la disminución de las áreas verdes de
+                <p style="margin: 0 0 4px 0;">- Evaluación histórica de la disminución de las áreas verdes de
                     la Amazonía.</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">Proyectos de control, remediación, reforestación, revegetación
+                <p style="margin: 0 0 4px 0;">- Proyectos de control, remediación, reforestación, revegetación
                     y restauración de zonas
                     degradas.</p>
             </li>
@@ -230,16 +230,16 @@ const proyectos = {
         escenario_costa: `<h4 style="font-weight: 500;">South American coast scenario</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">Pilot reforestation project of a desert coastal area of
+                <p style="margin: 0 0 4px 0;">- Pilot reforestation project of a desert coastal area of
                     the north of
                     Peru</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">Replication of the pilot project in other desert areas of
+                <p style="margin: 0 0 4px 0;">- Replication of the pilot project in other desert areas of
                     Peru</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">Rehabilitation of other South American coastal areas
+                <p style="margin: 0 0 4px 0;">- Rehabilitation of other South American coastal areas
                     desertified.
                 </p>
             </li>
@@ -247,11 +247,11 @@ const proyectos = {
         escenario_amazonia: `<h4 style="font-weight: 500;">Amazon scenario</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">Historical evaluation of the decrease in green areas of
+                <p style="margin: 0 0 4px 0;">- Historical evaluation of the decrease in green areas of
                     the Amazon.</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">Control, remediation, reforestation, revegetation projects
+                <p style="margin: 0 0 4px 0;">- Control, remediation, reforestation, revegetation projects
                     and restoration of areas
                     degraded.</p>
             </li>
@@ -300,9 +300,11 @@ const galeriaMasna = {
 const directivos = {
     es: {
         titulo: `Nuestros <span class="text-color">Directivos</span>`,
+        unidos_mejorar: `UNIDOS PARA MEJORAR EL MEDIO AMBIENTE DE LA TIERRA.`
     },
     en: {
         titulo: `Our <span class="text-color">Directors</span>`,
+        unidos_mejorar: `UNITED TO IMPROVE THE ENVIRONMENT OF THE EARTH.`
     }
 }
 
@@ -374,18 +376,19 @@ function changeLanguage(language) {
     }
 
     // tradu. de galeria
-    const galeriaMasnaTranslation = galeriaMasna[language];
-    if (galeriaMasnaTranslation) {
-        document.getElementById('galeria_titulo').innerHTML = galeriaMasnaTranslation.titulo;
-        document.getElementById('vertodo').innerHTML = galeriaMasnaTranslation.vertodo;
-        document.getElementById('trabajo').innerHTML = galeriaMasnaTranslation.trabajo;
-        document.getElementById('planeacion').innerHTML = galeriaMasnaTranslation.planeacion;
-    }
+    // const galeriaMasnaTranslation = galeriaMasna[language];
+    // if (galeriaMasnaTranslation) {
+    //     document.getElementById('galeria_titulo').innerHTML = galeriaMasnaTranslation.titulo;
+    //     document.getElementById('vertodo').innerHTML = galeriaMasnaTranslation.vertodo;
+    //     document.getElementById('trabajo').innerHTML = galeriaMasnaTranslation.trabajo;
+    //     document.getElementById('planeacion').innerHTML = galeriaMasnaTranslation.planeacion;
+    // }
 
     // tradu. de directivos
     const directivosTranslation = directivos[language];
     if (directivosTranslation) {
         document.getElementById('directivos_titulo').innerHTML = directivosTranslation.titulo;
+        document.getElementById('unidos_mejorar').textContent = directivosTranslation.unidos_mejorar;
     }
 
     // tradu. de contacto
