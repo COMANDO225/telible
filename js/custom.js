@@ -66,7 +66,7 @@ const navigation = {
 const nosotros = {
     es: {
         quienes: "Quiénes <span class='text-primary'>somos</span>",
-        descripcion: "GREEN DESERT (GD), SOMOS UNA ASOCIACIÓN SIN FINES DE LUCRO QUE TRABAJA PARA REFORESTAR<br /> LAS ZONAS DESÉRTICAS O DEPREDADAS SUDAMERICANAS QUE ANTES FUERON BOSQUES.",
+        descripcion: "GREEN DESERT ES UNA ASOCIACIÓN SIN FINES DE LUCRO QUE TRABAJA PARA REFORESTAR<br /> LAS ZONAS DESÉRTICAS O DEPREDADAS SUDAMERICANAS QUE ANTES FUERON BOSQUES.",
         atecedentes_titulo: "Antecedentes",
         atecedentes_desc: `Desde el siglo XIX se presentan pronunciadas
         variaciones climáticas a nivel
@@ -76,11 +76,11 @@ const nosotros = {
         cambios son provocados por la actividad humana, la cual han sido la
         principal
         causa de la rotura del equilibrio ecológico.
-        Cuando los españoles llegaron a américa en el siglo XV ac, la costa
+        Cuando los españoles llegaron a américa en el siglo XV, la costa
         occidental
         del continente, desde Guayaquil en Ecuador, hasta Tamarugal en Chile, era
         verde
-        y estaba poblada, por árboles de la especie nativa PROSOPIS PALLIDA,
+        y estaba poblada, por millones de árboles de la especie nativa PROSOPIS PALLIDA,
         comúnmente
         llamada ALGARROBO o TAMARUGO. Posteriormente los españoles introducen la
         cabra
@@ -96,11 +96,10 @@ const nosotros = {
         del hombre.
         Para contrarrestar los efectos de estas críticas situaciones, se ha creado
         la Asociación Green Desert (GD).`
-
     },
     en: {
         quienes: "Who <span class='text-primary'>we are</span>",
-        descripcion: "Desert (GD) is a non-profit organization <br> dedicated to reforestation of desert and degraded areas in South America, which in the past were forests.",
+        descripcion: "Green Desert is a non-profit organization <br> dedicated to reforestation of desert and degraded areas in South America, which in the past were forests.",
         atecedentes_titulo: "Background",
         atecedentes_desc: `Since the nineteenth century there have been pronounced
         climatic variations worldwide, which are reflected in temperature changes and patterns
@@ -113,7 +112,7 @@ const nosotros = {
         western
         of the continent, from Guayaquil in Ecuador, to Tamarugal in Chile, was
         green
-        and was populated by trees of the native species PROSOPIS PALLIDA,
+        and was populated by millions of trees of the native species PROSOPIS PALLIDA,
         commonly
         called ALGARROBO or TAMARUGO. Subsequently the Spaniards introduced the
         goat
@@ -151,7 +150,7 @@ const proyectos = {
         escenario_costa: `<h4 style="font-weight: 500;">Escenario de la costa sudamericana</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">- Proyecto piloto de reforestación de una costera desértica del
+                <p style="margin: 0 0 4px 0;">- Proyecto piloto de reforestación de una zona costera desértica del
                     norte del
                     Perú</p>
             </li>
@@ -215,8 +214,7 @@ const proyectos = {
         ingreso al área proyectada.</p>
     <br>
     <p style="margin: 0;">Así mismo, se considera una zona de una hectárea de extensión, que servirá
-        como vivero,
-        donde se instalará una casa prefabricada que servirá como casa habitación para el
+        como vivero para 10,000 plantones y la instalación de una casa prefabricada que servirá como habitación para el
         personal de vigilancia, técnicos y obreros encargados de los cultivos y riego de la
         plantación. También, en cada uno de estas áreas se instalarán los servicios sanitarios con
         un biodigestor para el personal de servicio.</p>`
@@ -296,11 +294,11 @@ const galeriaMasna = {
 const directivos = {
     es: {
         titulo: `Nuestros <span class="text-color">Directivos</span>`,
-        unidos_mejorar: `UNIDOS PARA MEJORAR EL MEDIO AMBIENTE DE LA TIERRA.`
+        unidos_mejorar: `UNIDOS PARA MEJORAR EL PLANETA.`
     },
     en: {
         titulo: `Our <span class="text-color">Directors</span>`,
-        unidos_mejorar: `UNITED TO IMPROVE THE ENVIRONMENT OF THE EARTH.`
+        unidos_mejorar: `UNITED TO IMPROVE THE PLANET.`
     }
 }
 
@@ -321,7 +319,29 @@ const formContacto = {
     }
 }
 
+const slides = {
+    es: {
+        slidetwo: `background-image: url('./images/slider/slider-2-spanish.jpg')`,
+        slidethree: `background-image: url('./images/slider/slider-3-spanish.jpg')`,
+        slidefour: `images/LOGO_CUADRO_SPANISH.png`
+    },
+    en: {
+        slidetwo: `background-image: url('./images/slider/slider-2-english.jpg')`,
+        slidethree: `background-image: url('./images/slider/slider-3-english.jpg')`,
+        slidefour: `images/LOGO_CUADRO_ENGLISH.png`
+    }
+}
+
 function changeLanguage(language) {
+
+    // tradu. de los sliders pe' causha
+    const slidesTranslation = slides[language];
+    if (slidesTranslation) {
+        document.getElementById('slidetwo').style = slidesTranslation.slidetwo;
+        document.getElementById('slidethree').style = slidesTranslation.slidethree;
+        document.getElementById('slidefour').src = slidesTranslation.slidefour;
+    }
+
     const navTranslation = navigation[language];
     if (navTranslation) {
         // Aplicar las traducciones a los elementos de la página
