@@ -298,7 +298,7 @@ const directivos = {
     },
     en: {
         titulo: `Our <span class="text-color">Directors</span>`,
-        unidos_mejorar: `UNITED TO IMPROVE THE PLANET.`
+        unidos_mejorar: `GREEN DESERT EMBRACE A DEEP PROMISE WITH THE RESTORATION THE ECOSYSTEMS.`
     }
 }
 
@@ -329,6 +329,19 @@ const slides = {
         slidetwo: `background-image: url('./images/slider/slider-2-english.jpg')`,
         slidethree: `background-image: url('./images/slider/slider-3-english.jpg')`,
         slidefour: `images/LOGO_CUADRO_ENGLISH.png`
+    }
+}
+
+const gerentes = {
+    es: {
+        cargo_presidente: `Presidente del Directorio`,
+        cargo_gerente: `Gerente General`,
+        cargo_logistica: `Gerente de logistica`,
+    },
+    en: {
+        cargo_presidente: `CEO GREEN DESERT`,
+        cargo_gerente: `GENERAL MANAGMENT GREEN DESERT`,
+        cargo_logistica: `LOGISTIC MANAGMENT`,
     }
 }
 
@@ -415,6 +428,14 @@ function changeLanguage(language) {
         document.getElementById('email').placeholder = formContactoTranslation.email;
         document.getElementById('message').placeholder = formContactoTranslation.message;
         document.getElementById('send_message_form').innerHTML = formContactoTranslation.send;
+    }
+
+    // tradu. de gerentes
+    const gerentesTranslation = gerentes[language];
+    if (gerentesTranslation) {
+        document.getElementById('cargo_presidente').innerHTML = gerentesTranslation.cargo_presidente;
+        document.getElementById('cargo_gerente').innerHTML = gerentesTranslation.cargo_gerente;
+        document.getElementById('cargo_logistica').innerHTML = gerentesTranslation.cargo_logistica;
     }
 }
 
