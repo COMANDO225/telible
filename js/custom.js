@@ -77,7 +77,7 @@ const nosotros = {
     atecedentes_titulo: "Antecedentes",
     atecedentes_desc: `Desde el siglo XIX se presentan pronunciadas
         variaciones climáticas a nivel
-        mundial, las cuales se ven reflejadas en cambios de temperaturas y patrones
+        mundial, las cuales se ven reflejadas en cambios de temperatura y patrones
         climáticos que alteran negativamente el medio ambiente. En muchos casos,
         estos
         cambios son provocados por la actividad humana, la cual ha sido la
@@ -190,45 +190,66 @@ const proyectos = {
         </ul>`,
     piloto_titulo: `DESCRIPCIÓN RESUMIDA DEL PROYECTO <span
         class="text-primary">PILOTO EN LA COSTA</span>`,
-    piloto_subtitulo: `<h4 style="font-weight: 500;">Descripción resumida:</h4>
-        <p class="texto_piloto_costa" style="color: #000;">Para el cumplimiento de su misión, GD ha elaborado un proyecto
-            piloto
-            para
-            reforestar
-            una zona costera del Perú con la especie denominada “Prosopis Pallida”, comúnmente
-            llamada algarrobo o tamarugo.</p>`,
-    algarrobo_tiulo: `Algarrobo: <span class="text-primary">El Rey del desierto</span>`,
-    algarrobo_desc_parraf_one: `<p style="margin: 0; color: #000;">El algarrobo es una planta que brinda diversos
-        beneficios al hombre debido
-        a sus
-        múltiples características y propiedades siendo materia prima en el desarrollo de muchas
-        actividades productivas y económicas como alimento, medicina, abono y más.</p>
-    <br>
-    <p style="margin: 0; color: #000;">Desde tiempos ancestrales, los habitantes del norte del Perú consideran la
-        planta del
-        algarrobo como “un regalo de Dios”, porque teniendo raíces profundas que extraen agua
-        subterránea, no necesita de lluvias para existir. Por ello, es un árbol muy importante para
-        minimizar el progreso del desierto en las zonas más áridas, toda vez que, además, sobrevive
-        utilizando mínimas cantidades de agua.</p>`,
-    algarrobo_desc_parraf_dos: `<p style="margin: 0; color: #000;">Para la ejecución del proyecto piloto Green Desert ha logrado el apoyo
-        inicial del Instituto
-        Peruano de Catastro (IPDC), el cual ha financiado el perfil, el anteproyecto y el proyecto
-        final de reforestación de una zona desértica en norte del Perú denominado: “Proyecto
-        piloto para reforestación de un área de 200 hectáreas con la especie denominada
-        algarrobo (Prosopis Pallida), en el caserío Nuevo Cucungará – distrito Catacaos, Provincia
-        de Piura – Departamento de Piura”.</p>`,
-    algarrobo_desc_parraf_tres: `<p style="margin: 0; color: #000;">El proyecto visa reforestar un área desértica, donde se pretende
-        implementar un pozo tubular para la
-        captación de agua subterránea para
-        consumo y riego, así como un
-        reservorio apoyado para almacenamiento de agua de riego y una trocha carrozable de
-        ingreso al área proyectada.</p>
-    <br>
-    <p style="margin: 0; color: #000;">Así mismo, se considera una zona de una hectárea de extensión, que servirá
-        como vivero para 10,000 plantones y la instalación de una casa prefabricada que servirá como habitación para el
-        personal de vigilancia, técnicos y obreros encargados de los cultivos y riego de la
-        plantación. También, en cada una de estas áreas se instalarán los servicios sanitarios con
-        un biodigestor para el personal de servicio.</p>`,
+    piloto_subtitulo: `<p class="texto_piloto_costa" style="color: #000">
+    Para el cumplimiento de su misión, GD ha elaborado un proyecto
+    piloto para reforestar una zona costera del Perú con la especie
+    denominada “Prosopis Pallida”, comúnmente llamada algarrobo o
+    tamarugo.
+  </p>
+  <div class="">
+    <h4 style="font-weight: 500">
+      Algarrobo
+      <span class="text-primary">El Rey del desierto</span>
+    </h4>
+    <div class="">
+      <p style="margin: 0; color: #000 !important">
+        El algarrobo es una planta que brinda diversos beneficios al
+        hombre debido a sus múltiples características y propiedades
+        siendo materia prima en el desarrollo de muchas actividades
+        productivas y económicas como alimento, medicina, abono y
+        más.
+      </p>
+      <br />
+      <p style="margin: 0; color: #000 !important">
+        Desde tiempos ancestrales, los habitantes del norte del Perú
+        consideran la planta del algarrobo como “un regalo de Dios”,
+        porque teniendo raíces profundas que extraen agua
+        subterránea, no necesita de lluvias para existir. Por ello,
+        es un árbol muy importante para minimizar el progreso del
+        desierto en las zonas más áridas, toda vez que, además,
+        sobrevive utilizando mínimas cantidades de agua.
+      </p>
+    </div>
+  </div>`,
+    algarrobo_second_parraf: `<p style="margin: 0; color: #000">
+  Para la ejecución del proyecto piloto Green Desert ha logrado el
+  apoyo inicial del Instituto Peruano de Catastro (IPDC), el cual ha
+  financiado el perfil, el anteproyecto y el proyecto final de
+  reforestación de una zona desértica en norte del Perú denominado:
+  “Proyecto piloto para reforestación de un área de 200 hectáreas
+  con la especie denominada algarrobo (Prosopis Pallida), en el
+  caserío Nuevo Cucungará – distrito Catacaos, Provincia de Piura –
+  Departamento de Piura”.
+</p>
+<div style="padding-top: 3rem">
+  <p style="margin: 0; color: #000">
+    El proyecto visa reforestar un área desértica, donde se pretende
+    implementar un pozo tubular para la captación de agua
+    subterránea para consumo y riego, así como un reservorio apoyado
+    para almacenamiento de agua de riego y una trocha carrozable de
+    ingreso al área proyectada.
+  </p>
+  <br />
+  <p style="margin: 0; color: #000">
+    Así mismo, se considera una zona de una hectárea de extensión,
+    que servirá como vivero, donde se instalará una casa
+    prefabricada que servirá como casa habitación para el personal
+    de vigilancia, técnicos y obreros encargados de los cultivos y
+    riego de la plantación. También, en cada una de estas áreas se
+    instalarán los servicios sanitarios con un biodigestor para el
+    personal de servicio.
+  </p>
+</div>`,
   },
   en: {
     proyectos_titulo: `SPECIFIC <span class="text-primary">PROJECTS</span>`,
@@ -262,28 +283,38 @@ const proyectos = {
             </li>
         </ul>`,
     piloto_titulo: `BRIEF DESCRIPTION OF THE PROJECT <span class="text-primary">PILOT ON THE COAST</span>`,
-    piloto_subtitulo: `<h4 style="font-weight: 500;">Brief description:</h4>
-        <p class="texto_piloto_costa">For the fulfillment of its mission, GD has developed a project
-            pilot
-            to
-            reforest
-            a coastal area of Peru with the species called "Prosopis Pallida", commonly
-            called carob or tamarugo.</p>`,
-    algarrobo_tiulo: `Carob Tree: <span class="text-primary">The King of the desert</span>`,
-    algarrobo_desc_parraf_one: `<p style="margin: 0;">For the execution of the pilot project Green Desert has obtained the initial support of the
-        Peruvian Institute of Cadastre (IPDC), which has financed the profile, the preliminary project
-        and the final project of reforestation of a desert area in northern Peru.</p>
-    <br>
-    <p style="margin: 0;">Since ancient times, the inhabitants of northern Peru have regarded the carob tree as "a gift from God" because, having deep roots that extract groundwater, it does not need rain to exist. Therefore, it is a very important tree for minimizing desertification in the most arid areas, as it also survives using minimal amounts of water.</p>`,
-
-    algarrobo_desc_parraf_dos: `<p style="margin: 0;">For the execution of the Green Desert pilot project, initial support has been obtained from the Peruvian Institute of Cadastre (IPDC), which has funded the profile, pre-project, and final reforestation project for a desert area in northern Peru.</p>`,
-
-    algarrobo_desc_parraf_tres: `<p style="margin: 0;">The project aims to reforest an area of 200 hectares, where it is planned to implement a tubular well for the extraction of groundwater for consumption and irrigation, as well as a supported reservoir for the storage of irrigation water and a drivable track for access to the projected area.</p>
-    <br>
-    <p style="margin: 0;">Likewise, an area of one hectare is considered, which will serve as a nursery, where a
-    prefabricated house will be installed that will serve as a home for the surveillance personnel,
-    technicians and workers in charge of the crops and irrigation of the plantation. Also, in each of
-    these areas, sanitary services will be installed with a biodigester for the staff service .</p>`,
+    piloto_subtitulo: `<p class="texto_piloto_costa" style="color: #000">
+    To fulfill its mission, GD has developed a pilot project to reforest a coastal area in Peru with the species known as "Prosopis Pallida," commonly called carob or tamarugo.
+</p>
+<div class="">
+    <h4 style="font-weight: 500">
+        Carob
+        <span class="text-primary">The King of the Desert</span>
+    </h4>
+    <div class="">
+        <p style="margin: 0; color: #000 !important">
+            The carob is a plant that offers various benefits to humans due to its multiple characteristics and properties, serving as a raw material in the development of many productive and economic activities such as food, medicine, and fertilizer, among others.
+        </p>
+        <br />
+        <p style="margin: 0; color: #000 !important">
+            Since ancient times, the inhabitants of northern Peru have regarded the carob plant as "a gift from God" because, with deep roots that extract groundwater, it does not rely on rainfall to survive. Hence, it is a vital tree for mitigating desertification in the most arid areas, as it thrives with minimal water resources.
+        </p>
+    </div>
+</div>
+`,
+    algarrobo_second_parraf: `<p style="margin: 0; color: #000">
+    For the execution of the Green Desert pilot project, initial support has been secured from the Peruvian Institute of Land Registry (IPDC), which has funded the profile, preliminary project, and final reforestation project for a desert area in northern Peru named: "Pilot Project for Reforestation of a 200-hectare area with the species known as carob (Prosopis Pallida) in the village of Nuevo Cucungará - Catacaos district, Piura Province - Piura Department."
+</p>
+<div style="padding-top: 3rem">
+    <p style="margin: 0; color: #000">
+        The project aims to reforest a desert area, where a tubular well will be implemented for the extraction of groundwater for consumption and irrigation. Additionally, there will be a supported reservoir for irrigation water storage and a drivable road to access the planned area.
+    </p>
+    <br />
+    <p style="margin: 0; color: #000">
+        Furthermore, a one-hectare area will serve as a nursery, where a prefabricated house will be installed to accommodate surveillance personnel, technicians, and laborers responsible for crop cultivation and irrigation. Additionally, sanitary facilities with a biodigester will be installed in each of these areas for the service personnel.
+    </p>
+</div>
+`,
   },
 };
 
@@ -496,14 +527,8 @@ function changeLanguage(language) {
       proyectosTranslation.piloto_titulo;
     document.getElementById("piloto_subtitulo").innerHTML =
       proyectosTranslation.piloto_subtitulo;
-    document.getElementById("algarrobo_tiulo").innerHTML =
-      proyectosTranslation.algarrobo_tiulo;
-    document.getElementById("algarrobo_desc_parraf_one").innerHTML =
-      proyectosTranslation.algarrobo_desc_parraf_one;
-    document.getElementById("algarrobo_desc_parraf_dos").innerHTML =
-      proyectosTranslation.algarrobo_desc_parraf_dos;
-    document.getElementById("algarrobo_desc_parraf_tres").innerHTML =
-      proyectosTranslation.algarrobo_desc_parraf_tres;
+    document.getElementById("algarrobo_second_parraf").innerHTML =
+      proyectosTranslation.algarrobo_second_parraf;
   }
 
   // tradu. de galeria
