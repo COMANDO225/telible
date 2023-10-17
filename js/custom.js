@@ -256,16 +256,16 @@ const proyectos = {
     escenario_costa: `<h4 style="font-weight: 500;">South American coast scenario</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">- Pilot reforestation project of a desert coastal area of
+                <p style="margin: 0 0 4px 0; color: #000;">- Pilot reforestation project of a desert coastal area of
                     the north of
                     Peru</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">- Replication of the pilot project in other desert areas of
+                <p style="margin: 0 0 4px 0; color: #000;">- Replication of the pilot project in other desert areas of
                     Peru</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">- Rehabilitation of other South American coastal areas
+                <p style="margin: 0 0 4px 0; color: #000;">- Rehabilitation of other South American coastal areas
                     desertified.
                 </p>
             </li>
@@ -273,11 +273,11 @@ const proyectos = {
     escenario_amazonia: `<h4 style="font-weight: 500;">Amazon scenario</h4>
         <ul>
             <li>
-                <p style="margin: 0 0 4px 0;">- Historical evaluation of the decrease in green areas of
+                <p style="margin: 0 0 4px 0; color: #000;">- Historical evaluation of the decrease in green areas of
                     the Amazon.</p>
             </li>
             <li>
-                <p style="margin: 0 0 4px 0;">- Control, remediation, reforestation, revegetation projects
+                <p style="margin: 0 0 4px 0; color: #000;">- Control, remediation, reforestation, revegetation projects
                     and restoration of areas
                     degraded.</p>
             </li>
