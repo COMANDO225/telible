@@ -256,7 +256,7 @@ const proyectos = {
   <br />
   <p style="margin: 0; color: #000">
     Así mismo, se considera una zona de una hectárea de extensión,
-    que servirá como vivero de 10,000 plantones, donde se instalará una casa
+    que servirá como vivero para 10,000 plantones, donde se instalará una casa
     prefabricada que servirá como casa habitación para el personal
     de vigilancia, técnicos y obreros encargados de los cultivos y
     riego de la plantación. También, en cada una de estas áreas se
