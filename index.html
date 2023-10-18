@@ -179,14 +179,29 @@
 								<button
 									id="language-button"
 									class="language-button"
+									style="
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										gap: 8px;
+									"
 								>
 									<img
-										src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
+										src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
 										id="flag"
 										width="32px"
 										height="auto"
-										alt=""
+										alt="image flag"
 									/>
+									<span
+										style="
+											color: white;
+											font-weight: 600;
+											text-transform: uppercase;
+										"
+										id="language-text"
+										>ENGLISH</span
+									>
 								</button>
 								<div id="language-menu" class="language-menu">
 									<button id="spanish-button">Español</button>
@@ -278,6 +293,8 @@
 					id="main-slider-carousel"
 					class="carousel slide"
 					data-ride="carousel"
+					data-interval="2000"
+					data-pause="false"
 				>
 					<div class="carousel-inner" role="listbox">
 						<div class="item relative active">
@@ -808,14 +825,14 @@
 							<br />
 							<p style="margin: 0; color: #000">
 								Así mismo, se considera una zona de una hectárea
-								de extensión, que servirá como vivero, donde se
-								instalará una casa prefabricada que servirá como
-								casa habitación para el personal de vigilancia,
-								técnicos y obreros encargados de los cultivos y
-								riego de la plantación. También, en cada una de
-								estas áreas se instalarán los servicios
-								sanitarios con un biodigestor para el personal
-								de servicio.
+								de extensión, que servirá como vivero de 10,000
+								plantones, donde se instalará una casa
+								prefabricada que servirá como casa habitación
+								para el personal de vigilancia, técnicos y
+								obreros encargados de los cultivos y riego de la
+								plantación. También, en cada una de estas áreas
+								se instalarán los servicios sanitarios con un
+								biodigestor para el personal de servicio.
 							</p>
 						</div>
 					</div>
@@ -1505,14 +1522,30 @@
 						<button
 							id="language-button-mobile"
 							class="language-button"
+							style="
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								gap: 8px;
+							"
 						>
 							<img
 								src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
 								id="flag-mobile"
 								width="32px"
 								height="auto"
-								alt=""
+								alt="bandera de peru"
 							/>
+							<span
+								style="
+									color: white;
+									font-weight: 600;
+									text-transform: uppercase;
+									font-size: 15px;
+								"
+								id="language-text-mobile"
+								>ENGLISH</span
+							>
 						</button>
 					</div>
 				</li>
@@ -1531,9 +1564,10 @@
 		<script src="js/portfolio.js"></script>
 		<script src="js/wow.js"></script>
 		<script src="js/lightbox.js"></script>
-		<script src="owl-carrosel/owl.carousel.min.js"></script>
-		<script src="js/slider.js"></script>
+		<!-- <script src="owl-carrosel/owl.carousel.min.js"></script> -->
+		<!-- <script src="js/slider.js"></script> -->
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/custom.js"></script>
 	</body>
 </html>

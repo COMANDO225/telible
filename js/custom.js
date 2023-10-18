@@ -1,7 +1,9 @@
 const languageButton = document.getElementById("language-button");
 const languageButtonMobile = document.getElementById("language-button-mobile");
 const flagImage = document.getElementById("flag");
+const languageText = document.getElementById("language-text");
 const flagImageMobile = document.getElementById("flag-mobile");
+const languageTextMobile = document.getElementById("language-text-mobile");
 let currentLanguage = localStorage.getItem("selectedLanguage") || "es";
 
 if (!currentLanguage) {
@@ -14,13 +16,15 @@ languageButton.addEventListener("click", () => {
 	if (currentLanguage === "es") {
 		currentLanguage = "en";
 		flagImage.src =
-			"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
+			"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
 		flagImage.style.height = "auto";
+		languageText.innerHTML = "Spanish";
 	} else {
 		currentLanguage = "es";
 		flagImage.src =
-			"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
+			"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
 		flagImage.style.height = "21px";
+		languageText.innerHTML = "English";
 	}
 	localStorage.setItem("selectedLanguage", currentLanguage);
 	changeLanguage(currentLanguage);
@@ -31,13 +35,15 @@ languageButtonMobile.addEventListener("click", () => {
 	if (currentLanguage === "es") {
 		currentLanguage = "en";
 		flagImageMobile.src =
-			"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
+			"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
 		flagImageMobile.style.height = "auto";
+		languageTextMobile.innerHTML = "Spanish";
 	} else {
 		currentLanguage = "es";
 		flagImageMobile.src =
-			"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
+			"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
 		flagImageMobile.style.height = "21px";
+		languageTextMobile.innerHTML = "English";
 	}
 	localStorage.setItem("selectedLanguage", currentLanguage);
 	changeLanguage(currentLanguage);
@@ -46,10 +52,18 @@ languageButtonMobile.addEventListener("click", () => {
 // Establecer la bandera y el idioma al refrescar.
 if (currentLanguage === "es") {
 	flagImage.src =
-		"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
+		"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
+	flagImageMobile.src =
+		"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
+	languageText.innerHTML = "English";
+	languageTextMobile.innerHTML = "English";
 } else {
 	flagImage.src =
-		"https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg";
+		"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
+	flagImageMobile.src =
+		"https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg";
+	languageText.innerHTML = "Spanish";
+	languageTextMobile.innerHTML = "Spanish";
 }
 
 const navigation = {
@@ -242,7 +256,7 @@ const proyectos = {
   <br />
   <p style="margin: 0; color: #000">
     Así mismo, se considera una zona de una hectárea de extensión,
-    que servirá como vivero, donde se instalará una casa
+    que servirá como vivero de 10,000 plantones, donde se instalará una casa
     prefabricada que servirá como casa habitación para el personal
     de vigilancia, técnicos y obreros encargados de los cultivos y
     riego de la plantación. También, en cada una de estas áreas se
@@ -311,7 +325,7 @@ const proyectos = {
     </p>
     <br />
     <p style="margin: 0; color: #000">
-        Furthermore, a one-hectare area will serve as a nursery, where a prefabricated house will be installed to accommodate surveillance personnel, technicians, and laborers responsible for crop cultivation and irrigation. Additionally, sanitary facilities with a biodigester will be installed in each of these areas for the service personnel.
+        Furthermore, a one-hectare area will serve as a nursery with 10,000 seedlings, where a prefabricated house will be installed to accommodate surveillance personnel, technicians, and laborers responsible for crop cultivation and irrigation. Additionally, sanitary facilities with a biodigester will be installed in each of these areas for the service personnel.
     </p>
 </div>
 `,
